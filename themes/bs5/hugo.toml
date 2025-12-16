@@ -1,0 +1,58 @@
+baseURL = 'https://transadavice.org/'
+languageCode = 'en-US'
+title = 'TransAdvice'
+
+[menu]
+
+  [[menu.main]]
+    name = "Live Support Chat"
+    url = "#"
+    weight = 1
+
+  [[menu.main]]
+    name = "About Us"
+    url = "#"
+    weight = 2
+
+  [[menu.main]]
+    name = "Donate"
+    url = "#"
+    weight = 3
+
+  [[menu.main]]
+    name = "Resources"
+    identifier = "resources"
+    weight = 4
+
+    [[menu.main]]
+      parent = "resources"
+      name = "Resource Directory"
+      url = "#"
+      weight = 1
+
+    [[menu.main]]
+      parent = "resources"
+      name = "Wiki"
+      url = "https://wiki.transadvice.org"
+      weight = 2
+
+    [[menu.main]]
+      parent = "resources"
+      name = "Submissions"
+      url = "#"
+      weight = 3
+
+  [[menu.main]]
+    name = "Code of Conduct"
+    url = "#"
+    weight = 5
+
+  [[menu.main]]
+    name = "Safety Report"
+    url = "#"
+    weight = 6
+
+[module]
+  [module.hugoVersion]
+    extended = false
+    min = '0.146.0'

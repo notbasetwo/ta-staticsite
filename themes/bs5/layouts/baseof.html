@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="{{ site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}" data-bs-theme="light">
+<head>
+  {{ partial "head.html" . }}
+</head>
+<body class="d-flex flex-column min-vh-100" style="font-family: 'PT Sans', Arial, sans-serif;">
+  <!-- Page Header -->
+  <header class="w-100 py-4" style="background-color: #A89ADA;">
+    <div class="container d-flex flex-column align-items-center">
+      <img src="/logo.png" alt="Logo" class="mb-3 img-fluid" style="height: auto;">
+      <h3 class="subtitle text-center" style="color: #515151;">Peer based transgender support chat</h3>
+    </div>
+  </header>
+
+  <!-- Navbar Border -->
+  <div class="navbar-border"></div>
+
+  <!-- Navigation bar/"menu" -->
+  {{ partial "menu.html" . }}
+
+  <!-- Main Content -->
+    <main class="flex-grow-1">
+    <div class="container py-5" style="max-width: 1000px;">
+      <section class="text-center">
+        {{ block "main" . }}{{ end }}
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer mt-auto py-3 bg-light">
+    {{ partial "footer.html" . }}
+  </footer>
+
+</body>
+</html>
