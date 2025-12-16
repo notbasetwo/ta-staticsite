@@ -44,7 +44,7 @@ title = 'TransAdvice'
 
   [[menu.main]]
     name = "Code of Conduct"
-    url = "#"
+    url = ""
     weight = 5
 
   [[menu.main]]

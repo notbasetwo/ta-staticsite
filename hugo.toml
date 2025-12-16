@@ -20,7 +20,7 @@ theme = 'bs5'
   [[menu.main]]
     identifier = "donate"
     name = "Donate"
-    url = "#"
+    url = "/donate/"
     weight = 3
 
   [[menu.main]]
@@ -33,7 +33,7 @@ theme = 'bs5'
     parent = "resources"
     identifier = "resource-directory"
     name = "Resource Directory"
-    url = "#"
+    url = "/resources/directory/"
     weight = 1
 
   [[menu.main]]
@@ -47,17 +47,17 @@ theme = 'bs5'
     parent = "resources"
     identifier = "submissions"
     name = "Submissions"
-    url = "#"
+    url = "/resources/submissions/"
     weight = 3
 
   [[menu.main]]
     identifier = "code-of-conduct"
     name = "Code of Conduct"
-    url = "#"
+    url = "/aup/"
     weight = 5
 
   [[menu.main]]
     identifier = "safety-report"
     name = "Safety Report"
-    url = "#"
+    url = "/safetyreport/"
     weight = 6

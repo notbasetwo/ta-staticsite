@@ -1,0 +1,22 @@
+{{ $url := .Get 0 }}
+{{ $csv := os.ReadFile $url | transform.Unmarshal (dict "delimiter" ",") }}
+<div class="table-responsive">
+  <table class="table table-striped table-hover table-bordered">
+    <thead class="table-light">
+      <tr>
+        {{ range index $csv 0 }}
+          <th>{{ . }}</th>
+        {{ end }}
+      </tr>
+    </thead>
+    <tbody>
+      {{ range after 1 $csv }}
+        <tr>
+          {{ range . }}
+            <td>{{ . | markdownify }}</td>
+          {{ end }}
+        </tr>
+      {{ end }}
+    </tbody>
+  </table>
+</div>
