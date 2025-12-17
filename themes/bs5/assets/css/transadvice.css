@@ -13,6 +13,10 @@ body {
   color: #515151;
 }
 
+.header {
+  background-color: #a89ada;
+}
+
 .footer {
   /* Sticky footer using flexbox layout */
   flex-shrink: 0;
