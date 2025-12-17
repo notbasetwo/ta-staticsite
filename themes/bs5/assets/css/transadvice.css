@@ -72,6 +72,10 @@ main {
   width: 100%;
 }
 
+a {
+  word-break: break-all;
+}
+
 @media (max-width: 1000px) {
   .container {
     max-width: 100vw;
